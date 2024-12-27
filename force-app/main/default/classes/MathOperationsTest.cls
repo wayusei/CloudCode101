@@ -23,7 +23,15 @@
 private class MathOperationsTest {
 
     @isTest
-    static void myUnitTest() {
-        // TO DO: implement unit test
+    static void testAddNumbers() {
+        // Arrange: Set up test data
+        Integer a = 5;
+        Integer b = 10;
+        
+        // Act: Call the method under test
+        Integer result = MathOperations.addNumbers(a, b);
+        
+        // Assert: Verify that the result is as expected
+        Assert.areEqual(15, result, 'The addNumbers method should return the sum of the inputs.');
     }
 }
